@@ -1,0 +1,20 @@
+[user]
+	name = Mateus Galvão
+	email = mateus@uololou.com.br
+[alias]
+	cia = commit -a -m
+	co = checkout
+	st = status -s
+	br = branch
+	lg = log --oneline
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = subl
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
