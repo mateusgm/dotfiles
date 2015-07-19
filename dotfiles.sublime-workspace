@@ -1,0 +1,670 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"deli",
+				"delivery_method"
+			],
+			[
+				"_prefix",
+				"_prefixes_with_partials"
+			],
+			[
+				"_pre",
+				"_prefixes_with_partials"
+			],
+			[
+				"cam",
+				"campaign_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "recipes/dev.sh",
+			"settings":
+			{
+				"buffer_size": 955,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "recipes/cinnamon.sh",
+			"settings":
+			{
+				"buffer_size": 1369,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "file:///home/mateus/documents\nfile:///home/mateus\nfile:///home/mateus/desktop\nfile:///home/mateus/work\nfile:///home/mateus/learning\nfile:///home/mateus/projects\nfile:///home/mateus/entertainment\nfile:///home/mateus/public\nfile:///home/mateus/work/uololou\nfile:///home/mateus/public\n",
+			"file": "files/gtk-bookmarks",
+			"file_size": 282,
+			"file_write_time": 130815682675480427,
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 264.0,
+		"last_filter": "save",
+		"selected_items":
+		[
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"pro",
+				"Project: Close"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/mateus/tools/dotfiles",
+		"/home/mateus/tools/dotfiles/files",
+		"/home/mateus/tools/dotfiles/recipes"
+	],
+	"file_history":
+	[
+		"/home/mateus/.bash_profile",
+		"/home/mateus/.zsh_history",
+		"/home/mateus/desktop/bolo-sistema/app/models/campanha.rb",
+		"/home/mateus/desktop/bolo-sistema/app/mailers/marketing/bolo_automation_mailer.rb",
+		"/home/mateus/desktop/bolo-sistema/app/models/cd/pedido.rb",
+		"/home/mateus/desktop/bolo-sistema/app/models/bolo/pedido.rb",
+		"/home/mateus/desktop/bolo-sistema/config/initializers/dashing.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/concerns/crud_actions.rb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/campanhas/show.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/_sidebar.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/mailers/marketing/campanha_mailer.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/unlocks_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/sessions_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/registrations_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/passwords_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/omniauth_callbacks_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/users/confirmations_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/marketing/campanhas_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/app/models/campanha_mailing.rb",
+		"/home/mateus/desktop/bolo-sistema/app/assets/stylesheets/application.css.scss",
+		"/home/mateus/desktop/bolo-sistema/app/models/bolo/cliente.rb",
+		"/home/mateus/desktop/bolo-sistema/app/controllers/marketing/mailings_controller.rb",
+		"/home/mateus/desktop/bolo-sistema/lib/tasks/bolo/contatos.rake",
+		"/home/mateus/desktop/bolo-sistema/app/models/mailing.rb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/campanhas/_form_fields.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/campanha_mailer/promocao.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/application/_form.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/campanhas/_testa_modal.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/application/edit.html.erb",
+		"/home/mateus/desktop/bolo-sistema/mandrill.rb",
+		"/home/mateus/desktop/bolo-sistema/config/initializers/mandrill.rb",
+		"/home/mateus/desktop/bolo-sistema/app/models/lead.rb",
+		"/home/mateus/desktop/bolo-sistema/config/initializers/mail.rb",
+		"/home/mateus/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/mateus/desktop/bolo-sistema/config/environments/production.rb",
+		"/home/mateus/desktop/Job.todo",
+		"/home/mateus/desktop/bolo-sistema/config/environments/development.rb",
+		"/home/mateus/desktop/bolo-sistema/config/mail.yml",
+		"/home/mateus/desktop/bolo-sistema/app/mailers/marketing/cd_automation_mailer.rb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/campanhas/_processa_modal.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/models/email_enviado.rb",
+		"/home/mateus/desktop/bolo-sistema/app/workers/campaign_sender_worker.rb",
+		"/home/mateus/desktop/bolo-sistema/Gemfile",
+		"/home/mateus/desktop/bolo-sistema/app/jobs/sample.rb",
+		"/home/mateus/desktop/bolo-sistema/config/database.yml",
+		"/home/mateus/desktop/bolo-sistema/config/routes.rb",
+		"/home/mateus/tools/dotfiles/recipes/server.sh",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/cd_automation_mailer/prospecta_lead.html.erb",
+		"/home/mateus/Downloads/google.csv",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/cd_automation_mailer/deseja_parabens.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/cd_automation_mailer/pede_feedback.html.erb",
+		"/home/mateus/desktop/bolo-sistema/app/views/marketing/cd_automation_mailer/envia_nota_fiscal.html.erb",
+		"/media/arquivos/tools/dotfiles/setup.sh",
+		"/home/mateus/.conkyrc",
+		"/home/mateus/.config/sublime-text-3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/home/mateus/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/mateus/.config/sublime-text-3/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
+		"/home/mateus/tools/dotfiles/recipes/dev.sh",
+		"/home/mateus/tools/dotfiles/apps/focus.py",
+		"/media/arquivos/tools/dotfiles/recipes/server.sh",
+		"/media/arquivos/tools/dotfiles/recipes/dev.sh",
+		"/media/arquivos/tools/dotfiles/recipes/cinnamon.sh",
+		"/media/arquivos/tools/dotfiles/recipes/home.sh",
+		"/media/arquivos/tools/uou-ubuntu/focus.py",
+		"/home/mateus/tools/dotfiles/recipes/cinnamon.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/mateus/desktop/bolo-sistema"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"apt-get install",
+			"|*",
+			"localhost",
+			"	",
+			"from",
+			"h3",
+			"ings",
+			"ing"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"h4"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "recipes/dev.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "recipes/cinnamon.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "files/gtk-bookmarks",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dotfiles.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"todo",
+				"~/desktop/Job.todo"
+			],
+			[
+				"campama",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"mail",
+				"config/initializers/mail.rb"
+			],
+			[
+				"lead",
+				"app/models/lead.rb"
+			],
+			[
+				"maili",
+				"app/models/mailing.rb"
+			],
+			[
+				"",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"produ",
+				"config/environments/production.rb"
+			],
+			[
+				"promo",
+				"app/views/marketing/campanha_mailer/promocao.html.erb"
+			],
+			[
+				"testamo",
+				"app/views/marketing/campanhas/_testa_modal.html.erb"
+			],
+			[
+				"camwor",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"campacon",
+				"app/controllers/marketing/campanhas_controller.rb"
+			],
+			[
+				"campawor",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"campa",
+				"app/models/campanha.rb"
+			],
+			[
+				"email",
+				"app/models/email_enviado.rb"
+			],
+			[
+				"campwor",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"cawor",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"cdau",
+				"app/mailers/marketing/cd_automation_mailer.rb"
+			],
+			[
+				"proce",
+				"app/views/marketing/campanhas/_processa_modal.html.erb"
+			],
+			[
+				"camma",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"boloaut",
+				"app/mailers/marketing/bolo_automation_mailer.rb"
+			],
+			[
+				"confirma",
+				"app/controllers/users/confirmations_controller.rb"
+			],
+			[
+				"camcon",
+				"app/controllers/marketing/campanhas_controller.rb"
+			],
+			[
+				"mailicon",
+				"app/controllers/marketing/mailings_controller.rb"
+			],
+			[
+				"conta",
+				"lib/tasks/bolo/contatos.rake"
+			],
+			[
+				"boclie",
+				"app/models/bolo/cliente.rb"
+			],
+			[
+				"camform",
+				"app/views/marketing/campanhas/_form_fields.html.erb"
+			],
+			[
+				"campshow",
+				"app/views/marketing/campanhas/show.html.erb"
+			],
+			[
+				"cr",
+				"app/controllers/concerns/crud_actions.rb"
+			],
+			[
+				"crud",
+				"app/controllers/concerns/crud_actions.rb"
+			],
+			[
+				"marside",
+				"app/views/marketing/_sidebar.html.erb"
+			],
+			[
+				"camamai",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"camamail",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"camamailer",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"camacon",
+				"app/controllers/marketing/campanhas_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"campcon",
+				"app/controllers/marketing/campanhas_controller.rb"
+			],
+			[
+				"campse",
+				"app/workers/campaign_sender_worker.rb"
+			],
+			[
+				"cdaut",
+				"app/mailers/marketing/cd_automation_mailer.rb"
+			],
+			[
+				"camp",
+				"app/models/campanha.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"camfor",
+				"app/views/marketing/campanhas/_form_fields.html.erb"
+			],
+			[
+				"mand",
+				"config/initializers/mandrill.rb"
+			],
+			[
+				"mandr",
+				"mandrill.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"camaform",
+				"app/views/marketing/campanhas/_form_fields.html.erb"
+			],
+			[
+				"cammailer",
+				"app/mailers/marketing/campanha_mailer.rb"
+			],
+			[
+				"camamailprom",
+				"app/views/marketing/campanha_mailer/promocao.html.erb"
+			],
+			[
+				"appfor",
+				"app/views/application/_form.html.erb"
+			],
+			[
+				"camshow",
+				"app/views/marketing/campanhas/show.html.erb"
+			],
+			[
+				"camrb",
+				"app/models/campanha.rb"
+			],
+			[
+				"testamoda",
+				"app/views/marketing/campanhas/_testa_modal.html.erb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"sam",
+				"app/jobs/sample.rb"
+			],
+			[
+				"das",
+				"config/initializers/dashing.rb"
+			],
+			[
+				"bolopedi",
+				"app/models/bolo/pedido.rb"
+			],
+			[
+				"cdpedido",
+				"app/models/cd/pedido.rb"
+			],
+			[
+				"samp",
+				"app/jobs/sample.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"boloau",
+				"app/mailers/marketing/bolo_automation_mailer.rb"
+			],
+			[
+				"autom",
+				"app/mailers/marketing/bolo_automation_mailer.rb"
+			],
+			[
+				"automa",
+				"app/mailers/marketing/cd_automation_mailer.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/desktop/bolo-sistema/bolo-sistema.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
