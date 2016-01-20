@@ -2,8 +2,10 @@
 
 rsync -Crvazu --delete \
   --exclude=docker/ \
+  --exclude=thunderbird/ \
   --exclude=Personalizadas/ \
   --exclude=configs/ \
+  --exclude=entertainment/ \
   --exclude=android-sdk-linux/ \
   --exclude=node_modules/ \
   --exclude=cache/ \

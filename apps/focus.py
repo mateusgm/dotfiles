@@ -6,8 +6,9 @@ import commands
 program_name = sys.argv[1] # the program to be focused
  
 # get all windows which contain "program_name" from wmcontrol
-candidates = sorted([x.strip() for x in commands.getoutput(""" wmctrl -lx | tail -n +2 | awk -v win="%s" 'tolower($0) ~ win {print $1;}' """ % (program_name, )).split("\n") if x !=''])
+candidates = sorted([x.strip().split(' ')[0] for x in commands.getoutput(""" wmctrl -lx | awk -v win="%s" 'tolower($0) ~ win {print $1" "$3;}' """ % (program_name, )).split("\n") if (x !='') & (x.find('desktop') == -1)])
 
+print(candidates)
 if candidates : # at least one candidate found , we need to check if the active window is among the candidates (for cycling)
  
         # Get the id of the active window

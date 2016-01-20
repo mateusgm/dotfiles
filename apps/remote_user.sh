@@ -3,7 +3,7 @@
 user=$1
 server=$2
 
-ssh-copy-id root@$server
+# ssh-copy-id root@$server
 ssh root@$server -t "adduser $user"
 ssh-copy-id $user@$server
 ssh root@$server -t "passwd -d $user"
