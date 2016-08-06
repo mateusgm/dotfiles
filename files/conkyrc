@@ -47,16 +47,16 @@ default_shade_color 1d1d1d
 color0 ffffff
 color1 ffffff
 color2 ffffff
-
+color3 FF0D0D
 
 #lua_load ~/.conky/conkybg.lua
 #lua_draw_hook_pre conky_draw_bg
 
 TEXT
 ${voffset 5}
-${goto 92}CPU1: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu1}%${font}${color}${alignr 90}CPU3: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color}
+${goto 92}CPU1: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu1}%${font}${color} (${color3}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input | cut -c-2 }°${color})${alignr 60}CPU3: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color} (${color3}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp3_input | cut -c-2 }°${color})
 
-${goto 92}CPU2: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color}${alignr 87}CPU4: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color} 
+${goto 92}CPU2: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color} (${color3}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp2_input | cut -c-2 }°${color})${alignr 57}CPU4: ${font Ubuntu:style=Bold:size=9}${color1}${cpu cpu2}%${font}${color} (${color3}${exec cat /sys/devices/platform/coretemp.0/hwmon/hwmon0/temp4_input | cut -c-2 }°${color}) 
 
 #${alignr 15}Temperatur: ${color1}${font Ubuntu:style=Bold:size=9}${color1}${execi 30 sensors | grep 'Core0' | cut -c15-16}°C${color}${font}  
 
