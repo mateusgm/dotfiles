@@ -1,3 +1,4 @@
+sudo apt-get install -y wmctrl
 
      # `gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-#{k} "['']"`
      #  `gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "#{already_created.uniq.to_s.gsub('"', "'")}"`
