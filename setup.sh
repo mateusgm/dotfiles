@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive
+
 for file in `find files/ -type f | grep -v .git^`; do
 	link="`pwd`/${file}"
   dir=`basename $(dirname $file) | grep -v files`
