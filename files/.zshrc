@@ -6,18 +6,17 @@ ZSH_THEME="robbyrussell"
 DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 
-plugins=(git tmux tmuxinator autojump command-not-found bundler npm)
+plugins=(git tmux  autojump command-not-found bundler)
 
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
 export LANG=pt_BR.UTF-8
-export PATH=${PATH}:"/usr/local/Trolltech/Qt-4.8.6/bin"
-export PATH=${PATH}:"$HOME/tools/elastic-beanstalk/eb/linux/python2.7"
-export PATH=${PATH}:"$HOME/tools/android-sdk-linux/platform-tools:$HOME/tools/android-sdk-linux/tools"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -25,8 +24,6 @@ else
   export EDITOR='subl'
 fi
 
-
-PERL_MB_OPT="--install_base \"/home/mateus/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/mateus/perl5"; export PERL_MM_OPT;
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# For a ipython notebook and pyspark integration
+export SPARK_HOME="/usr/local/Cellar/apache-spark/2.0.0/libexec/"
+export PYSPARK_SUBMIT_ARGS="--master local[2]"
