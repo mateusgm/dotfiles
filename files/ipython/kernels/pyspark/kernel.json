@@ -1,0 +1,15 @@
+{
+  "display_name": "PySpark",
+  "language": "python",
+  "argv": [
+    "python",
+    "-m", "ipykernel",
+    "--profile=pyspark",
+    "-f", "{connection_file}"
+  ],
+  "env": {
+    "PYSPARK_SUBMIT_ARGS": " --master local[2] pyspark-shell ",
+    "asd_PYSPARK_SUBMIT_ARGS": " --master spark://localhost:7077",
+    "hey": "--conf spark.driver.memory=20000m  --conf spark.executor.memory=20000m"
+  }
+}
