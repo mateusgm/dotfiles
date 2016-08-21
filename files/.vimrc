@@ -12,11 +12,12 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-perl/vim-perl'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 filetype plugin indent on
@@ -27,7 +28,7 @@ filetype plugin indent on
 " colors
 syntax enable
 set background=dark
-" let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " ui
@@ -52,6 +53,8 @@ set hidden
 set autoread
 set scrolloff=3
 set encoding=utf-8
+set complete-=i
+au CursorHold * checktime
 
 " cmds
 set history=1000
@@ -83,42 +86,13 @@ augroup vimrcEx
 
   "hive filetype
   autocmd BufNewFile,BufRead *.hql set filetype=hive expandtab
- 
+
   " indentation setup
   autocmd FileType text setlocal textwidth=78
   autocmd FileType ruby,hive,yaml,html,javascript,sass set ai sw=2 sts=2 et
   autocmd FileType python,perl set sw=4 sts=4 et
 
-  autocmd FileType perl set isfname=@,48-57,/,.,_,+,,,#,$,%,~,=,:
-  autocmd FileType perl let b:dispatch = 'perl -Wc %'
 augroup END
-
-
-"""""""""""""""""""""""""""""""""" SHORTCUTS
-
-" remaps
-let mapleader=","
-imap jj <ESC>
-
-" format the entire file
-nmap <leader>fef ggVG=
-
-" Switch between last two buffers
-nnoremap <leader><leader> <C-^>
-
-" frequently used commands
-nnoremap <space> :nohlsearch<CR>
-nnoremap <leader>g :Ggrep '\b<cword>\b'<CR>
-nnoremap <leader>d :Dispatch<cr>
-
-" Move a line of text using ALT+[jk]
-nmap <c-j> mz:m+<cr>`z
-nmap <c-k> mz:m-2<cr>`z
-
-" open file in current directory
-cnoremap <expr> %% expand('%:h').'/'
-map <leader>e :edit %%
-map <leader>v :view %%
 
 
 """""""""""""""""""""""""""""""""" FUNCTIONS
@@ -126,7 +100,14 @@ function! CallAsync(cmd)
   exe ':silent !' . a:cmd . ' > /dev/null 2>&1 &'
   exe ':redraw!'
 endfunction
-nnoremap <leader>r :execute "call CallAsync('devctl restart') \| call CallAsync('ssh $USER-book devctl restart')"<cr>
+
+function! WriteToQuickfix(cmd)
+  let l:output = system(a:cmd)
+  cexpr l:output
+  "caddexpr ""
+  "cwindow
+  exe ':redraw!'
+endfunction
 
 " Multipurpose tab: indent or complete
 function! InsertTabWrapper()
@@ -137,8 +118,6 @@ function! InsertTabWrapper()
     return "\<c-p>"
   endif
 endfunction
-inoremap <expr> <tab> InsertTabWrapper()
-inoremap <s-tab> <c-n>
 
 " rename current file
 function! RenameFile()
@@ -150,7 +129,44 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-map <leader>mv :call RenameFile()<cr>
+
+"""""""""""""""""""""""""""""""""" SHORTCUTS
+
+" remaps
+let mapleader=","
+imap jj <ESC>
+
+" copy and paste
+vmap <leader>y :w !ssh localhost -p 2222 pbcopy<CR><CR>
+nmap <leader>p :r !ssh localhost -p 2222 pbpaste<CR>
+
+" format the entire file
+nmap <leader>fef ggVG=
+
+" Switch between last two buffers
+nnoremap <leader><leader> <C-^>
+
+" frequently used commands
+nnoremap <space> :nohlsearch<CR>
+nnoremap <leader>g :Ggrep '\b<cword>\b'<CR>
+nnoremap <leader>d :Dispatch<cr>
+nnoremap <leader>mv :call RenameFile()<cr>
+
+" smart tabs
+inoremap <expr> <tab> InsertTabWrapper()
+inoremap <s-tab> <c-n>
+
+" trailling space
+nnoremap <C-@> :s/\s\+$//e<cr>:nohlsearch<cr>
+
+" Move a line of text using ALT+[jk]
+nmap <c-j> mz:m+<cr>`z
+nmap <c-k> mz:m-2<cr>`z
+
+" open file in current directory
+cnoremap <expr> %% expand('%:h').'/'
+map <leader>e :edit %%
+map <leader>v :view %%
 
 
 """""""""""""""""""""""""""""""""" PLUGINS
@@ -168,10 +184,12 @@ let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
 
 " CtrlP
+nmap <leader>s :NERDTreeToggle<CR>
 let g:ctrlp_by_filename = 0
 let g:ctrlp_max_files = 0
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_cmd = 'CtrlPMixed'
 
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
@@ -182,3 +200,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
 
+
+"""""""""""""""""""""""""""""""""" EXTENDED vimrc
+
+source ~/.vimrc_extended
