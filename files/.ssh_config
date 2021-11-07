@@ -1,4 +1,0 @@
-Host *
-  ForwardAgent yes
-  HashKnownHosts no
-  RemoteFormard 2222 localhost:22
