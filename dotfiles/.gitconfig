@@ -1,0 +1,29 @@
+[user]
+  name = Mateus Melo
+  email = mateus.melo@traderepublic.com
+[alias]
+	hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
+	co = checkout
+	branches = for-each-ref --sort=-committerdate refs/heads/
+  ci = commit
+  cia = commit -a
+  cix = commit --apend
+  co = checkout
+  st = status -s
+  br = branch
+  lg = log --oneline
+  me = log --author=mateus.melo
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[push]
+  default = current
+[core]
+  editor = vim
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
