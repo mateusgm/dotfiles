@@ -1,6 +1,5 @@
 [user]
   name = Mateus Melo
-  email = mateus.melo@traderepublic.com
 [alias]
 	hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
 	co = checkout
@@ -23,6 +22,7 @@
 [core]
   editor = vim
   autocrlf = input
+  excludesfile = ~/.gitignore_global
 [apply]
   whitespace = nowarn
 [format]
