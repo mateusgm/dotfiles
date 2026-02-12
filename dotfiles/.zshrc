@@ -76,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -99,3 +100,7 @@ export LANG=pt_BR.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/opt/homebrew/bin/"
+export PATH="$PATH:/opt/homebrew/opt/ruby/bin"
+export PATH="$PATH:/opt/homebrew/lib/ruby/gems/4.0.0/bin"

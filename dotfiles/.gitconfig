@@ -2,22 +2,18 @@
   name = Mateus Galvão de Melo
   email = mateus.melo
 [alias]
-	hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
-	co = checkout
-	branches = for-each-ref --sort=-committerdate refs/heads/
+  hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
+  co = checkout
+  br = for-each-ref --sort=-committerdate refs/heads/
   ci = commit
   cia = commit -a
-  cix = commit --apend
   co = checkout
   st = status -s
-  br = branch
-  lg = log --oneline
   me = log --author=mateus.melo
+  lg = !git log | head -n 20
+	lastwc = !git last | wc
 [color]
-  ui = auto
-  diff = auto
-  status = auto
-  branch = auto
+  ui = always
 [push]
   default = current
 [core]
@@ -26,5 +22,9 @@
   excludesfile = ~/.gitignore_global
 [apply]
   whitespace = nowarn
+[log]
+  date = short
+  color = always
 [format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  pretty = format:%C(auto,yellow)%h %C(auto)%>(12,trunc)%ad (%C(Green)%cr%C(reset))%x09 %C(auto,Cyan)%<(12,trunc)%aN%x09 : %C(auto,reset)%s %C(auto,red)% gD% D
+  
