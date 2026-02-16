@@ -1,4 +1,4 @@
-1. Open `todo.md` and select the first unchecked items to work on.
+1. Open specs/$ARGUMENTS[0]/todo.md and select the first unchecked items to work on.
 2. Carefully plan each item, then post your plan as a comment on GitHub issue #X.
 3. Create a new branch and implement your plan:
     - Write robust, well-documented code.

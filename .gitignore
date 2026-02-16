@@ -1,1 +1,9 @@
 files/.vim/bundle/*
+dotfiles/.claude/cache
+dotfiles/.claude/file-history
+dotfiles/.claude/debug
+dotfiles/.claude/ide
+dotfiles/.claude/history*
+dotfiles/.claude/projects
+dotfiles/.claude/shell-snapshots
+dotfiles/.claude/todos
