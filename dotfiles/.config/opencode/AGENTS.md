@@ -1,1 +1,1 @@
-dotfiles/.claude/CLAUDE.md
+/Users/carlacastrogalvao/.claude/CLAUDE.md
