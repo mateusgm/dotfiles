@@ -1,4 +1,4 @@
-Great. I need your help to write out a comprehensive implementation plan from a spec file that you can find on ./specs/$ARGUMENTS[0]/spec.md
+Great. I need your help to write out a comprehensive implementation plan from a spec file that you can find on ./specs/$ARGUMENTS/spec.md
 
 Assume that the engineer has zero context for our codebase and questionable taste. document everything they need to know. which files to touch for each task, code, testing, docs they might need to check. how to test it.
 

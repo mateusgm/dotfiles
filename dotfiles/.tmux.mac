@@ -15,33 +15,43 @@ unbind &
 unbind "'"
 
 set-option -g prefix C-a # C-a for perfix just like screen
-
 bind-key C-=    run-shell 'tmux kill-session -t $(tmux display-message -p "#S")'
-bind-key C-a    last-window
-bind-key |      split-window -h
-bind-key \\     split-window -v
-bind-key x      kill-pane
-bind-key X      kill-window
-bind-key ,      previous-window # <
-bind-key .      next-window     # >
-bind-key <      swap-window -t :-
-bind-key >      swap-window -t :+
-bind-key n      command-prompt 'rename-window %%'
-bind-key N      command-prompt 'rename-session %%'
 bind-key Escape copy-mode -u
 bind-key r      source-file ~/.tmux.conf \; display-message " ✱ ~/.tmux.conf is reloaded"
 bind-key R      refresh-client
 bind-key a      send-key C-a
+
+# layout
+bind-key N      command-prompt 'rename-window %%'
+bind-key n      command-prompt -p "New title:" "select-pane -T '%%'"
+
+bind-key |      split-window -h
+bind-key \\     split-window -v
+bind-key x      kill-pane
+bind-key X      kill-window
+
+bind-key <      swap-window -t :-
+bind-key >      swap-window -t :+
+bind-key [      swap-pane -U
+bind-key ]      swap-pane -D
+bind-key \{     join-pane -t :-
+bind-key \}     join-pane -t :+
+
+bind-key -r Left  resize-pane -L 5
+bind-key -r Right resize-pane -R 5
+bind-key -r Down  resize-pane -D 5
+bind-key -r Up    resize-pane -U 5
+
+# navigation
+bind-key ,      previous-window # <
+bind-key .      next-window     # >
+bind-key C-a    last-window
 
 bind-key C-j    select-pane -L
 bind-key C-l    select-pane -R
 bind-key C-k    select-pane -D
 bind-key C-i    select-pane -U
 
-bind-key -r Left  resize-pane -L 5
-bind-key -r Right resize-pane -R 5
-bind-key -r Down  resize-pane -D 5
-bind-key -r Up    resize-pane -U 5
 
 ## set status bar
 set-option -g status-bg colour11
@@ -54,6 +64,9 @@ set-option -g status-left-length 60
 
 set-window-option -g window-status-current-style bg=colour166,fg=colour15
 set-window-option -g window-status-current-format ' #I #W '
+
+set -g pane-border-status top
+set -g pane-border-format "#{pane_index} #{pane_title}"
 
 ## set window notifications
 set-option -g visual-activity on

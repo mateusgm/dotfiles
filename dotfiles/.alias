@@ -16,3 +16,5 @@ alias pbpaste='ssh localhost -p 2222 pbpaste'
 alias fixssh='export $(tmux showenv SSH_AUTH_SOCK)'
 alias bqx='bq query --nouse_legacy_sql'
 
+# Set pane title to current command or directory
+ panetitle() { printf '\033]2;%s\033\\\033' "$1" }
