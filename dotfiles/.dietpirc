@@ -1,0 +1,8 @@
+# Dietpi path
+export PATH="/usr/bin:/boot/dietpi:/bin:/usr/sbin:/sbin:$PATH"
+
+# Load DietPi global functions
+. /boot/dietpi/func/dietpi-globals || { echo -e '[\e[31mFAILED\e[0m] DietPi-Login | Failed to load DietPi-Globals.'; return 1; }
+
+# Load DietPi login script
+[[ $G_DIETPI_LOGIN ]] || /boot/dietpi/dietpi-login
