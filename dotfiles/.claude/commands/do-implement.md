@@ -1,14 +1,17 @@
-1. Open ./specs/$ARGUMENTS/todo.md and identify any tasks not marked as completed.
-2. For each incomplete task:
-    - Get context about the respective task from ./specs/$ARGUMENTS/plan.md
-    - Double-check if it's truly unfinished (if uncertain, ask for clarification).
-    - If you confirm it's already done, skip it.
-    - Let me know if you have questions, otherwise, implement it as described. DO NOT DEVIATE FROM THE PLAN.
-    - Look at the ./specs/$ARGUMENTS/spec.md to ensure your implementation aligns with the requirements.
-    - Make sure the tests pass, and the program builds/runs
-    - Commit the changes to your repository with a clear commit message.
-    - Update ./specs/$ARGUMENTS/todo.md to mark this task as completed.
-3. After you finish each group of sections, pause and wait for user review or feedback.
-4. Repeat with the next unfinished task as directed by the user.
+1. Understand the big picture of what we're trying to do from $ARGUMENTS/spec.md
+2. Open $ARGUMENTS/todo.md and $ARGUMENTS/plan.md to understand the plan and identify incompleted tasks 
+3. For each incomplete task spin up a sub agent with clear and self-contained context to:
+    - fetch main from origin, rebase against it and create a new branch
+    - double-check if it's truly unfinished and skip to the next task if so
+    - implement it as described. DO NOT DEVIATE FROM THE PLAN. 
+    - Commit frequently. TDD, DRY, YAGNI ruthlessly.
+    - dont adjust safeguards without asking my approval.
+4. When the task is done, spin up a sub agent to review it with clear and self-contained problem focused context (dont give details about the solution):
+    - inspect the code with a fresh and critical view to ensure the implementation solves all requirements, doesnt do anything else, doesnt overcomplicate the solution and its not missing tests.
+    - address critical and important points
+    - Update $ARGUMENTS/todo.md to mark this task as completed
+    - Push the branch to origin and open up a PR.
+5. Repeat with the next unfinished task
 
-Think carefully and only action the specific task I have given you with the most concise and elegant solution that changes as little code as possible.
+Think carefully and only action the specific task I have given you with the most
+concise and elegant solution that changes as little code as possible.
