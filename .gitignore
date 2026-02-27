@@ -9,3 +9,4 @@ dotfiles/.config/opencode/*
 !dotfiles/.config/opencode/AGENDS.md
 !dotfiles/.config/opencode/commands
 !dotfiles/.config/opencode/*.json
+!dotfiles/.config/opencode/.opencode

@@ -14,7 +14,5 @@ alias pbcopy='ssh localhost -p 2222 pbcopy'
 alias pbpaste='ssh localhost -p 2222 pbpaste'
 
 alias fixssh='export $(tmux showenv SSH_AUTH_SOCK)'
-alias bqx='bq query --nouse_legacy_sql'
 
-# Set pane title to current command or directory
- panetitle() { printf '\033]2;%s\033\\\033' "$1" }
+alias cleandocker='docker image prune && docker system prune -af --volumes'
