@@ -119,3 +119,4 @@ set -g window-active-style 'fg=colour250,bg=black'
 
 set-option -g default-shell /bin/zsh
 
+

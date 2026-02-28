@@ -106,5 +106,10 @@ export LANG=pt_BR.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$PATH:$HOME/.local/bin"
 
-source $HOME/.zshenv
-eval "$(rbenv init - zsh)"
+if command -v rbenv; then
+  source $HOME/.zshenv
+  eval "$(rbenv init - zsh)"
+fi
+
+# opencode
+export PATH=$HOME/.opencode/bin:$PATH

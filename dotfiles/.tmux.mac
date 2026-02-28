@@ -125,3 +125,11 @@ set -g window-active-style 'fg=colour250,bg=black'
 
 set-option -g default-shell /bin/zsh
 
+# Enable extended keys support
+set -g extended-keys on
+set -s extended-keys on
+# Tell tmux your terminal supports extended keys
+set -a terminal-features 'xterm*:extkeys'
+# Use CSI u format
+set -g extended-keys-format csi-u
+
