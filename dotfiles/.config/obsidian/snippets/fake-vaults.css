@@ -1,0 +1,39 @@
+
+
+/** parent folders **/
+
+.nav-files-container > div > .nav-folder {
+	margin-bottom: 5px !important;
+
+}
+
+	.nav-files-container > div > .nav-folder > .nav-folder-title,
+	.nav-files-container > div > .nav-file > .nav-file-title
+	 {
+		padding-left: 12px !important;
+	}
+
+	.nav-files-container > div > .nav-folder > .nav-folder-title {
+		font-weight: 600;
+		font-size: var(--vault-name-font-size);
+		/*	color: var(--vault-name-color);*/
+	}
+
+	.nav-files-container > div > .nav-folder > .nav-folder-title:hover {
+		font-weight: 600;
+	}
+
+
+
+
+/** nested folders **/
+
+.nav-files-container > div > .nav-folder > .nav-folder-title  .tree-item-icon { 
+	display: none;
+}
+
+.nav-files-container > div > .nav-folder > .nav-folder-children {
+	border-left: none;
+	margin-left: 2px;
+}
+

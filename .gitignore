@@ -10,3 +10,4 @@ dotfiles/.config/opencode/*
 !dotfiles/.config/opencode/commands
 !dotfiles/.config/opencode/*.json
 !dotfiles/.config/opencode/.opencode
+._*
