@@ -1,5 +1,6 @@
 #!/bin/bash
 
-./recipes/oh-my-zsh.sh 
-./recipes/vundle.sh 
+git submodule update --init --recursive
 ./bin/link-dotfiles
+./recipes/mac.sh
+./recipes/oh-my-zsh.sh
