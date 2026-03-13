@@ -1,1 +1,0 @@
-/Users/carlacastrogalvao/.claude/CLAUDE.md
