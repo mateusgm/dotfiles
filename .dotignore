@@ -1,0 +1,6 @@
+README.md
+.gitignore
+.gitmodules
+.dotignore
+.DS_Store
+bin/

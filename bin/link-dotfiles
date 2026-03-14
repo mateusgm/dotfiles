@@ -1,12 +1,5 @@
 #!/bin/bash
 
-EXCLUDE=(
-  ".git"
-  ".gitignore"
-  "README.md"
-  "install.sh"
-  ".DS_Store"
-)
 DOTFILES="$(pwd)"
 HOME_DIR="$HOME"
 
@@ -20,25 +13,24 @@ echo "Platform: $PLATFORM"
 
 # skipping logic
 should_skip() {
-  for e in "${EXCLUDE[@]}"; do
-    [ "$1" = "$e" ] && return 0
-  done
+  [[ $1 == *.mac ]] && return 0
+  [[ $1 == *.linux ]] && return 0
+  grep -xq "$1" $DOTFILES/.dotignore && return 0
   return 1
 }
 
 # symlink top-level files/dirs to home
-for item in "$DOTFILES"/*; do
+for item in "$DOTFILES"/.*; do
   name="$(basename "$item")"
   should_skip "$name" && continue
-  target="$HOME_DIR/.$name"
-  ln -sfn "$item" "$target"
-  echo "Linked $target -> $item"
+  ln -sfn "$item" "$HOME_DIR/$name"
+  echo "Linked $name -> $item"
 done
 
 
 # handle platform-specific configs (.mac / .linux)
 find "$DOTFILES" -type f -name "*.$PLATFORM" | while read -r file; do
-  base="${file%.$PLATFORM}"
-  ln -sfn "$file" "$base"
-  echo "Platform link $base -> $file"
+  name="$(basename ${file%.$PLATFORM})"
+  ln -sfn "$file" "$HOME_DIR/$name"
+  echo "Platform link $name -> $file"
 done
