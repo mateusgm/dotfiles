@@ -1,6 +1,8 @@
-#!/bin/bash
-
 git submodule update --init --recursive
+
+./bin/mac-setup.sh 
+
+./bin/oh-my-zsh.sh
+
 ./bin/link-dotfiles
-./recipes/mac.sh
-./recipes/oh-my-zsh.sh
+

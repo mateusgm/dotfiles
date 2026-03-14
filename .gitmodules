@@ -1,6 +1,6 @@
-[submodule "dotfiles/.vim/bundle/Vundle.vim"]
-	path = dotfiles/.vim/bundle/Vundle.vim
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "dotfiles/.config/opencode"]
-	path = dotfiles/.config/opencode
+[submodule ".config/opencode"]
+	path = .config/opencode
 	url = git@github.com:mateusgm/yaocc.git
