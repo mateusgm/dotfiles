@@ -11,3 +11,5 @@
 !.config/opencode/*.json
 !.config/opencode/.opencode
 ._*
+.docker/
+!.docker/config.json

@@ -1,6 +1,6 @@
 [user]
-  name = Mateus Galvão de Melo
-  email = mateus.melo
+  name = mateusgm
+  email = mateusgm@users.noreply.github.com
 [alias]
   hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
   co = checkout
@@ -20,7 +20,7 @@
   editor = vim
   symlinks = true
   autocrlf = input
-  excludesfile = ~/.gitignore_global
+  excludesFile = ~/.gitignore_global
 [apply]
   whitespace = nowarn
 [log]
@@ -28,6 +28,5 @@
   color = always
 [format]
   pretty = format:%C(auto,yellow)%h %C(auto)%>(12,trunc)%ad (%C(Green)%cr%C(reset))%x09 %C(auto,Cyan)%<(12,trunc)%aN%x09 : %C(auto,reset)%s %C(auto,red)% gD% D
-  
 [submodule]
-	recurse = true
+  recurse = true
