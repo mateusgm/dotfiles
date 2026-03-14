@@ -29,3 +29,5 @@
 [format]
   pretty = format:%C(auto,yellow)%h %C(auto)%>(12,trunc)%ad (%C(Green)%cr%C(reset))%x09 %C(auto,Cyan)%<(12,trunc)%aN%x09 : %C(auto,reset)%s %C(auto,red)% gD% D
   
+[submodule]
+	recurse = true
