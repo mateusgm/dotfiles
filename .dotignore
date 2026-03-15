@@ -3,4 +3,5 @@ README.md
 .gitmodules
 .dotignore
 .DS_Store
+.git
 bin/
