@@ -7,26 +7,15 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "cmd-escape": "workspace::ToggleZoom",
     },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
-  },
-  {
-    "bindings": {
-      "cmd-escape": "workspace::ToggleZoom"
-    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-escape": "terminal_panel::Toggle"
-    }
-  }
+      "ctrl-cmd-shift-t": "file_finder::Toggle",
+      "cmd-t": "terminal_panel::Toggle",
+    },
+  },
 ]

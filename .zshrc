@@ -104,6 +104,7 @@ export LANG=pt_BR.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source $HOME/.alias
 export PATH="$PATH:$HOME/.local/bin"
 
 if command -v rbenv; then

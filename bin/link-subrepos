@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DOTFILES="$(cd "$(dirname "$0")/.." && pwd)"
+
+while read -r path repo; do
+  [[ -z "$path" || -z "$repo" ]] && continue
+  target="$DOTFILES/$path"
+  if [ -d "$target" ]; then
+    echo "Skip $path (already exists)"
+  else
+    echo "Clone $repo -> $path"
+    git clone "$repo" "$target"
+  fi
+done < "$DOTFILES/.dotmap"

@@ -1,6 +1,6 @@
 [user]
   name = mateusgm
-  email = mateusgm@users.noreply.github.com
+  email = 470509+mateusgm@users.noreply.github.com
 [alias]
   hist = log --graph --color=always --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s' --all
   co = checkout
@@ -12,6 +12,7 @@
   me = log --author=mateus.melo
   lg = !git log | head -n 20
 	lastwc = !git last | wc
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
 [color]
   ui = always
 [push]
