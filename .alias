@@ -17,3 +17,10 @@ alias fixssh='export $(tmux showenv SSH_AUTH_SOCK)'
 
 alias cleandocker='docker image prune && docker system prune -af --volumes'
 alias httpserver='docker run -p 8000:8000 -v ./:/app -w /app  -it python:3.11-alpine python -m http.server 8000'
+
+disk_analyser() {
+  du -h -d 1 $1 2> /dev/null |\
+    sort -hr |\
+    sed '1,1d' |\
+    head -n "${2:-5}"
+}

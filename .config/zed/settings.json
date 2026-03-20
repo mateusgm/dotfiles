@@ -8,12 +8,12 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "terminal": {
-    "dock": "right"
+    "dock": "bottom"
   },
   "agent": {
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "vim_mode": false,
   "base_keymap": "SublimeText",
