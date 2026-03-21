@@ -18,4 +18,15 @@
       "cmd-t": "terminal_panel::Toggle",
     },
   },
+  {
+    "bindings": {
+      "alt-cmd-n": "terminal::RenameTerminal"
+    }
+  },
+  {
+    "context": "(RecentProjects || RecentProjects > Picker > Editor)",
+    "bindings": {
+      "cmd-shift-o": "workspace::AddFolderToProject"
+    }
+  }
 ]
