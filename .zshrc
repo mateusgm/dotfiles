@@ -121,5 +121,7 @@ export GEM_HOME="$HOME/.gem"
 export PATH="$HOME/.gem/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PATH:$PYENV_ROOT/bin"
-eval "$(pyenv init - zsh)"
+if [[ -d $PYENV_ROOT/bin ]]; then
+  export PATH="$PATH:$PYENV_ROOT/bin"
+  eval "$(pyenv init - zsh)"
+fi

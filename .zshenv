@@ -1,3 +1,2 @@
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-. "$HOME/.cargo/env"
