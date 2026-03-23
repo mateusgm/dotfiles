@@ -56,6 +56,8 @@ set-option -g status-right '#[bold]#(whoami) ● #H#[default] '
 set-option -g status-right-length 60
 set-option -g status-left-length 60
 
+set-window-option -g window-status-current-style "bg=colour166,fg=colour15"
+
 ## highlight active window
 #set-window-option -g window-status-current-bg colour166
 #set-window-option -g window-status-current-fg colour15

@@ -11,6 +11,7 @@
   st = status -s
   me = log --author=mateus.melo
   lg = !git log | head -n 20
+  lg2 = log --pretty=format:'%h | %ad | %s' --date=format:'%Y-%m-%d %H:%M'
 	lastwc = !git last | wc
 	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
   prune-branches = "!f() { git branch --merged main | grep -v '^\\* main' | grep -v '^main' | xargs -n 1 git branch -d }"
