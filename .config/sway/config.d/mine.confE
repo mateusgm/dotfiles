@@ -1,0 +1,17 @@
+default_border none
+xwayland disable
+input __touchpad__ {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+input * {
+    xkb_layout "us"
+    xkb_variant "intl"
+}
+
+unbindsym $mod+Space
+unbindsym $mod+d
+bindsym $mod+d focus mode_toggle
+bindsym $mod+Space exec $menu
